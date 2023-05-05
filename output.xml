@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230421 15:25:27.823" rpa="false" schemaversion="3">
+<suite id="s1" name="Practica" source="c:\Users\batsi\Desktop\Automation\practica.robot">
+<test id="s1-t1" name="Test case 1: Positive LogIn test" line="7">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://practicetestautomation.com/practice-test-login/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230421 15:25:28.218" level="INFO">Opening browser 'Chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<status status="PASS" starttime="20230421 15:25:28.213" endtime="20230421 15:25:32.140"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="username"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230421 15:25:32.142" level="INFO">Clicking element '//*[@id="username"]'.</msg>
+<status status="PASS" starttime="20230421 15:25:32.141" endtime="20230421 15:25:32.225"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="username"]</arg>
+<arg>student</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230421 15:25:32.228" level="INFO">Typing text 'student' into text field '//*[@id="username"]'.</msg>
+<status status="PASS" starttime="20230421 15:25:32.227" endtime="20230421 15:25:32.346"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="password"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230421 15:25:32.348" level="INFO">Clicking element '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20230421 15:25:32.347" endtime="20230421 15:25:32.432"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="password"]</arg>
+<arg>Password123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230421 15:25:32.439" level="INFO">Typing text 'Password123' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20230421 15:25:32.438" endtime="20230421 15:25:32.534"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230421 15:25:32.538" level="INFO">Clicking button '//*[@id="submit"]'.</msg>
+<status status="PASS" starttime="20230421 15:25:32.537" endtime="20230421 15:25:33.657"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230421 15:25:34.658" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230421 15:25:33.657" endtime="20230421 15:25:34.658"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230421 15:25:34.659" endtime="20230421 15:25:36.882"/>
+</kw>
+<status status="PASS" starttime="20230421 15:25:28.210" endtime="20230421 15:25:36.884"/>
+</test>
+<test id="s1-t2" name="Test case 2: Negative Username test" line="17">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://practicetestautomation.com/practice-test-login/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230421 15:25:36.888" level="INFO">Opening browser 'Chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<status status="PASS" starttime="20230421 15:25:36.887" endtime="20230421 15:25:41.140"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="username"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230421 15:25:41.142" level="INFO">Clicking element '//*[@id="username"]'.</msg>
+<status status="PASS" starttime="20230421 15:25:41.141" endtime="20230421 15:25:41.224"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="username"]</arg>
+<arg>estudiante</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230421 15:25:41.227" level="INFO">Typing text 'estudiante' into text field '//*[@id="username"]'.</msg>
+<status status="PASS" starttime="20230421 15:25:41.226" endtime="20230421 15:25:41.344"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="password"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230421 15:25:41.346" level="INFO">Clicking element '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20230421 15:25:41.345" endtime="20230421 15:25:41.424"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="password"]</arg>
+<arg>Password123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230421 15:25:41.426" level="INFO">Typing text 'Password123' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20230421 15:25:41.425" endtime="20230421 15:25:41.522"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230421 15:25:41.523" level="INFO">Clicking button '//*[@id="submit"]'.</msg>
+<status status="PASS" starttime="20230421 15:25:41.522" endtime="20230421 15:25:41.611"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//*[@id="error"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230421 15:25:41.751" level="INFO">Element '//*[@id="error"]' is displayed.</msg>
+<status status="PASS" starttime="20230421 15:25:41.611" endtime="20230421 15:25:41.751"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230421 15:25:41.753" endtime="20230421 15:25:43.995"/>
+</kw>
+<status status="PASS" starttime="20230421 15:25:36.886" endtime="20230421 15:25:43.996"/>
+</test>
+<test id="s1-t3" name="Test case 3: Negative Password test" line="28">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://practicetestautomation.com/practice-test-login/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230421 15:25:44.000" level="INFO">Opening browser 'Chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<status status="PASS" starttime="20230421 15:25:43.999" endtime="20230421 15:25:47.755"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="username"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230421 15:25:47.757" level="INFO">Clicking element '//*[@id="username"]'.</msg>
+<status status="PASS" starttime="20230421 15:25:47.757" endtime="20230421 15:25:47.835"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="username"]</arg>
+<arg>student</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230421 15:25:47.843" level="INFO">Typing text 'student' into text field '//*[@id="username"]'.</msg>
+<status status="PASS" starttime="20230421 15:25:47.842" endtime="20230421 15:25:47.961"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="password"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230421 15:25:47.964" level="INFO">Clicking element '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20230421 15:25:47.963" endtime="20230421 15:25:48.044"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="password"]</arg>
+<arg>Contraseña</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230421 15:25:48.046" level="INFO">Typing text 'Contraseña' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20230421 15:25:48.045" endtime="20230421 15:25:48.144"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230421 15:25:48.146" level="INFO">Clicking button '//*[@id="submit"]'.</msg>
+<status status="PASS" starttime="20230421 15:25:48.145" endtime="20230421 15:25:48.237"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//*[@id="error"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230421 15:25:48.288" level="INFO">Element '//*[@id="error"]' is displayed.</msg>
+<status status="PASS" starttime="20230421 15:25:48.239" endtime="20230421 15:25:48.288"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230421 15:25:50.289" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230421 15:25:48.289" endtime="20230421 15:25:50.289"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230421 15:25:50.290" endtime="20230421 15:25:52.520"/>
+</kw>
+<status status="PASS" starttime="20230421 15:25:43.998" endtime="20230421 15:25:52.521"/>
+</test>
+<status status="PASS" starttime="20230421 15:25:27.830" endtime="20230421 15:25:52.524"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Practica">Practica</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
